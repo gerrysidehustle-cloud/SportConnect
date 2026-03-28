@@ -1,0 +1,36 @@
+.card {
+  background: var(--bg-3);
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius-lg);
+  padding: 20px 16px;
+  text-align: center;
+  transition: border-color 0.2s, transform 0.15s;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.icon { font-size: 36px; margin-bottom: 10px; }
+
+.title {
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.desc {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--text-4);
+  line-height: 1.4;
+}
+
+.date {
+  font-size: 11px;
+  color: var(--accent);
+  font-weight: 700;
+  margin-top: 8px;
+}

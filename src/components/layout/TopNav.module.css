@@ -1,0 +1,77 @@
+.nav {
+  background: var(--bg-2);
+  border-bottom: 2px solid var(--border);
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 58px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: -0.5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.logo span { color: var(--accent); }
+
+.tabs {
+  display: flex;
+  gap: 4px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: var(--text-4);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  transition: all 0.15s;
+}
+
+.tab:hover {
+  background: var(--bg-4);
+  color: var(--text-2);
+}
+
+.tab.active {
+  background: var(--accent);
+  color: #fff;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 13px;
+  cursor: pointer;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .nav { padding: 0 14px; }
+  .tabs { gap: 2px; }
+  .tab { padding: 7px 10px; font-size: 11px; }
+  .logo { font-size: 17px; }
+}

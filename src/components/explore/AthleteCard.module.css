@@ -1,0 +1,103 @@
+.card {
+  background: var(--bg-3);
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  border-color: var(--athlete-color);
+  transform: translateY(-2px);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 16px;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.name {
+  font-weight: 800;
+  font-size: 15px;
+  color: var(--text);
+}
+
+.followers {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-4);
+  margin-top: 2px;
+}
+
+.sports {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.sportTag {
+  background: var(--bg-5);
+  border: 1px solid color-mix(in srgb, var(--athlete-color) 25%, transparent);
+  border-radius: var(--radius-full);
+  padding: 3px 9px;
+  font-size: 11px;
+  color: var(--athlete-color);
+  font-weight: 700;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sessionVal {
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--athlete-color);
+}
+
+.sessionLabel {
+  font-family: var(--font-body);
+  font-size: 10px;
+  color: var(--text-4);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.followBtn {
+  background: var(--athlete-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 8px 16px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  transition: opacity 0.15s;
+}
+
+.followBtn:hover { opacity: 0.85; }
+
+.followBtn.following {
+  background: var(--bg-5);
+  border: 1px solid var(--border-3);
+  color: var(--text-3);
+}

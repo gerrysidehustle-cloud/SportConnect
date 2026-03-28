@@ -1,0 +1,138 @@
+.sidebar {
+  padding: 20px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-5);
+  margin-bottom: 10px;
+}
+
+/* Friends */
+.friendsList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.friendRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.friendRow:hover { background: var(--bg-4); }
+
+.friendAvatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 12px;
+  color: #fff;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.statusDot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 2px solid var(--bg);
+}
+
+.online { background: #4ade80; }
+.offline { background: var(--text-5); }
+.away { background: #fbbf24; }
+
+.friendName {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--text-2);
+  flex: 1;
+}
+
+.friendSport { font-size: 14px; }
+
+/* Trending */
+.trendingList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.trendingItem {
+  padding: 10px 12px;
+  background: var(--bg-3);
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.trendingItem:hover { border-color: var(--accent); }
+
+.trendingTag {
+  font-weight: 800;
+  font-size: 13px;
+  color: var(--accent);
+}
+
+.trendingCount {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--text-4);
+  margin-top: 1px;
+}
+
+/* Sessions */
+.sessionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sessionItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-3);
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.sessionItem:hover { border-color: var(--accent); }
+
+.sessionSport { font-size: 20px; }
+
+.sessionTitle {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.sessionTime {
+  font-size: 11px;
+  color: var(--accent);
+  font-weight: 700;
+}

@@ -1,0 +1,116 @@
+.sidebar {
+  padding: 20px 14px;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  min-height: calc(100vh - 58px);
+}
+
+.miniProfile {
+  background: var(--bg-3);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-2);
+}
+
+.miniBanner {
+  height: 52px;
+  background: linear-gradient(135deg, #FF6B35 0%, #FF9A5C 50%, #FFD166 100%);
+}
+
+.miniBody {
+  padding: 0 14px 14px;
+}
+
+.miniAvatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FF6B35, #FF9A5C);
+  border: 3px solid var(--bg-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 16px;
+  color: #fff;
+  margin-top: -24px;
+  margin-bottom: 8px;
+}
+
+.miniName {
+  font-weight: 800;
+  font-size: 15px;
+  color: #fff;
+}
+
+.miniHandle {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-4);
+  margin-top: 2px;
+}
+
+.miniStats {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.miniStat { text-align: center; }
+
+.miniStatVal {
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--accent);
+}
+
+.miniStatLabel {
+  font-family: var(--font-body);
+  font-size: 10px;
+  color: var(--text-4);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-5);
+  margin-bottom: 8px;
+  padding-left: 12px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  color: var(--text-4);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  transition: all 0.15s;
+}
+
+.navItem:hover {
+  background: var(--bg-4);
+  color: var(--text-2);
+}
+
+.navItem.active {
+  background: var(--accent-dim);
+  color: var(--accent);
+}
+
+.navIcon {
+  font-size: 18px;
+  width: 22px;
+  text-align: center;
+}
